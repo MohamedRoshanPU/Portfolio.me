@@ -51,9 +51,10 @@ html{
 
   /* scroll responsive */
 
-  @media (max-width:600px){
+  @media (max-width:400px){
       .scroll{
-          display:none;
+          bottom: 1%;
+          left: 47%;
       }
   }
 
@@ -212,6 +213,16 @@ header{
 
 }
 
+#myVideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+    object-fit: cover;
+}
+
 /* Banner Styles */
 
 .banner-container{
@@ -219,7 +230,7 @@ header{
     justify-content: center;
     max-width: 100%;
     height: 100vh;
-    background-image: url("./images/banner-bg.jpg");
+    /* background-image: url("/images/banner-bg.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -266,7 +277,7 @@ header{
 @media (max-width:700px){
     .banner-container{
         max-width: 100%;
-        height: 70vh;
+        height: 100vh;
     }
     .banner-contents{
         width: 500px;
@@ -418,6 +429,9 @@ header{
 /* Work Responsive */
 
 @media (max-width:700px){
+    .work-container{
+       margin-top: 200px;
+    }
     .texts h2{
         font-size: 80px;
     }
